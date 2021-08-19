@@ -33,12 +33,6 @@ handleTextChange(e){
   this.setState({newCommentText: e.target.value})
 }
 
-deleteTodo(id) {
-  this.setState((prevState) => ({
-      todos: prevState.todos.filter(item => item.id !== id),
-  }))
-};
-
 render(){
   return (
     <div>
